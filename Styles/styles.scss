@@ -34,3 +34,34 @@ img {
 	padding-left: 10px;
 	border-left: 1px dotted #999;
 }
+
+#article {
+    margin-top: 0%;
+}
+
+
+#button, #submit {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+#button:hover {
+    background-color: #cb7730;
+    border: 2px solid #cb7730;
+}
+
+#submit:hover {
+    background-color: #cb7730;
+    border: 2px solid #cb7730;
+}
