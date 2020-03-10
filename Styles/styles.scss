@@ -1,0 +1,36 @@
+body {
+	line-height: 1.5;
+	color: #333;
+}
+
+#app {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+article {
+	border-bottom: 1px solid #666;
+	
+	h2 {
+		text-decoration: underline;
+	}
+}
+
+time {
+	font-style: italic;
+}
+
+img {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+.description {
+	padding-left: 10px;
+	border-left: 1px dotted #999;
+}
