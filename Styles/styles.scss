@@ -1,67 +1,144 @@
-body {
-	line-height: 1.5;
-	color: #333;
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    background-color: #910c0d;
+    min-width: 50em;
 }
 
-#app {
-	max-width: 600px;
-	margin: 0 auto;
+#body {
+    line-height: 1.5;
+    color: #333;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5%;
+    height: 200%;
+    box-shadow: 3px 3px 30px black;
 }
 
-h1 {
-	text-align: center;
+#h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#title {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#rankQuestion {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+section {
+    margin-top: 10%;
 }
 
 article {
-	border-bottom: 1px solid #666;
-	
-	h2 {
-		text-decoration: underline;
-	}
-}
+    margin-top: 0%;
+    display: block;
 
-time {
-	font-style: italic;
+    p {
+        text-decoration: none;
+    }
+
+    ul {
+    font-family: 'Roboto', sans-serif;
+    }
 }
 
 img {
-	width: 100%;
-	margin: 0 auto;
-	display: block;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .description {
-	padding-left: 10px;
-	border-left: 1px dotted #999;
+    padding-left: 10px;
 }
 
-#article {
-    margin-top: 0%;
-}
-
-
-#button, #submit {
+#submit {
     background-color: black;
-    border: 2px solid white;
+    border: 2px solid black;
     color: white;
     padding: 1% 2%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 0;
+    margin: 0 auto;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
     font-size: 1em;
 }
 
+.fas {
+    display: inline-block;
+    margin: auto auto;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid transparent;
+    color: black;
+    font-size: 5em;
+}
 
-#button:hover {
-    background-color: #cb7730;
-    border: 2px solid #cb7730;
+.fas:hover {
+    color: #910c0d;
 }
 
 #submit:hover {
-    background-color: #cb7730;
-    border: 2px solid #cb7730;
+    background-color: #910c0d;
+    border: 2px solid #910c0d;
+}
+
+li {
+    list-style-type: square;
+}
+
+input {
+    width: 3em;
+    float: right;
+    transform: translate(0%, -150%);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#instruction {
+    margin: auto auto;
+    font-size: 0.8em;
+    color: gray;
+}
+
+#voiceGuide {
+    font-size: 2em;
+}
+
+#bbc {
+    width: 15em;
+}
+
+#firstRow {
+    transform: translate(0%, -50%);
+    padding-top: 5%;
+}
+
+#secondRow {
+    transform: translate(0%, -300%);
+}
+
+@media only screen and (min-width:992px) {
+    body {
+        max-width: 60em;
+    }
 }
