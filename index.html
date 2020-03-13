@@ -1,21 +1,63 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="Styles/styles.scss">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
     <title>BBC News</title>
 </head>
-<body>
-    <header></header>
-    <section></section>
+<body id="body">
 
-    <p id="p1"></p>
-    <p id="p2"></p>
-    <p id="p3"></p>
-    <p id="p4"></p>
-    <p id="p5"></p>
-    <button id="button" tabindex="8">Next</button>
-    <script src="script.js"></script>
+    <div class="container">
+
+        <!-- using bootstrap to organise the page -->
+        <div class="row" id="firstRow">
+            <div class="col-lg-1">
+                <img src="image/bbc.png" id="bbc" />
+            </div>
+        </div>
+        <div class="row" id="secondRow">
+            <!-- voice guide -->
+            <i class="fas fa-assistive-listening-systems" onclick="listen()" id="voiceGuide" tabindex="1"></i>
+            <p id="instruction">Press Tab button on your keyboard to navigate and press enter to click.</p>
+        </div>
+
+        <div class="row" id="thirdRow">
+            <div class="col-md-1" id="left">
+                <i class="fas fa-angle-left" id="buttonP" onclick="goBack" tabindex="2"></i>
+            </div>
+
+            <!-- creating articles, ranking page -->
+            <div class="col-md-10">
+                <header></header>
+                <section></section>
+
+                <h1 id="h1"></h1>
+
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+                <p id="p4"></p>
+                <p id="p5"></p>
+                <button id="submit" tabindex="9">Submit</button>
+
+            </div>
+            <div class="col-md-1" id="right">
+
+                <i class="fas fa-angle-right" id="buttonN" onclick="goNext" tabindex="3"></i>
+            </div>
+
+            <script src="script.js"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/f7b62949c1.js" crossorigin="anonymous"></script>
+
+        </div>
+
+    </div>
 </body>
 </html>
